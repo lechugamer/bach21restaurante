@@ -1,0 +1,462 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.logo{
+    width: 390px;
+}
+
+.contenedor{
+    background: rgb(237,58,58);
+    background: linear-gradient(90deg, rgba(237,58,58,1) 50%, rgba(255,255,255,1) 50%);
+    width: 100%;
+    margin: auto;
+}
+
+/*-----Estilos de header-----*/
+
+.header{
+    height: 200px;
+}
+
+.header .contenedor{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo,.icon-menu{
+    margin: 3px;
+    color: black;
+}
+
+.icon-menu{
+    display: block;
+    width: 40px;
+    height: 40px;
+    font-size: 15px;
+    background: white;
+    text-align: center;
+    line-height: 39px;
+    border: 1px solid rgb(237,58,58);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.nav {
+    position:absolute;
+    top: 200px;
+    left: -120%; /*Se dirige a la izquierda para ocultarlo*/
+    width: 100%;
+    z-index: 100;
+    transition: 0.5s;
+}
+
+.nav ul a{
+    text-decoration: none;
+    text-align: left;
+    font-size: 20px;
+    display: block;
+    padding: 13px;
+    height: 50px;
+    background: rgb(237,58,58);
+    color: white;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+}
+
+.nav ul a:hover{
+    background: white;
+    color: crimson;
+    transition: .5s;
+}
+
+.nav ul ul{
+    display: none;
+}
+
+.nav a span{
+    position: absolute;
+    right: 5px;
+}
+
+.nav ul li:hover ul{
+    display: block;
+
+}
+
+.submenu {
+    position: absolute;
+    top: 150px;
+    right: -120%; /*Se dirige a la derecha para ocultarlo*/
+    width: 100%;
+    transition: 0.5s;
+
+}
+
+.muestrate{
+    left: 0%; /*Se mostrará menu escondido a la izquierda*/
+}
+
+.muestrate_sub{
+    right: 0%; /*Se mostrará menu escondido a la derecha*/
+}
+
+/*Estilos de banner*/
+
+.banner{
+    height: 126px;
+    position: relative;
+}
+
+.banner .contenedor{
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 50%, rgba(237,58,58,1) 50%); 
+    position: absolute;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+/*Estilos imagenes dentro de main e info*/
+
+.main img{
+    max-width: 70%;
+}
+
+.info{
+    background: rgb(237,58,58);
+    background: linear-gradient(90deg, rgba(237,58,58,1) 50%, rgba(255,255,255,1) 50%);
+    color: black;
+    text-align: center;
+    margin-top: -50px;
+}
+
+.info__img{
+    border-radius: 50%;
+    border: 7px solid rgb(237,58,58);
+    position: relative;
+}
+
+.info__txt{
+    text-align: justify;
+    padding: 15px;
+    margin-bottom: 50px;
+}
+
+/*Estilos de desayunos*/
+
+.desayunos__img{
+    border: 7px solid white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.desayunos,
+.desayunos__columna{
+ 
+    text-align: center;
+    color: black;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 50%, rgba(237,58,58,1) 50%);
+}
+
+.desayunos .desayunos__titulo{
+    margin-top: -50px;
+    font-size: 40px;
+}
+
+.desayunos h3{
+    font-size: 20px;
+}
+
+/*Estilos de entradas*/
+
+.entradas__img{
+    border: 7px solid rgb(237,58,58);
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.entradas,
+.entradas__columna{
+    text-align: center;
+    color: black;
+    background: rgb(237,58,58);
+    background: linear-gradient(90deg, rgba(237,58,58,1) 50%, rgba(255,255,255,1) 50%);
+}
+
+.entradas .entradas__titulo{
+
+    font-size: 40px;
+}
+
+.entradas h3{
+    font-size: 20px;
+}
+
+
+/*Estilos de platillos fuertes*/
+
+.pfuertes__img{
+    border: 7px solid white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.pfuertes,
+.pfuertes__columna{
+    text-align: center;
+    color: black;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 50%, rgba(237,58,58,1) 50%);    
+}
+
+.pfuertes .pfuertes__titulo{
+
+    font-size: 40px;
+}
+
+.pfuertes h3{
+    font-size: 20px;
+}
+
+/*Estilos de postres*/
+
+.postres__img{
+    border: 7px solid rgb(237,58,58);
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.postres,
+.postres__columna{
+    text-align: center;
+    color: black;
+    background: rgb(237,58,58);
+    background: linear-gradient(90deg, rgba(237,58,58,1) 50%, rgba(255,255,255,1) 50%);
+}
+
+.postres .postres__titulo{
+
+    font-size: 40px;
+}
+
+.postres h3{
+    font-size: 20px;
+}
+
+/*Estilos de contacto*/
+
+.mapa .contenedor{
+    padding: 15px;
+    color: white;
+    text-align: center;
+    background:rgba(237,58,58,1);
+}
+
+.mapa h3{
+    font-size: 30px;
+}
+
+.mapa p{
+    margin-top: 10px;
+    text-align: justify;
+}
+
+/*Estilos del footer*/
+
+.footer{
+    margin-top: 3px;
+    background: white;
+    color: rgb(134, 134, 134);
+    padding: 0;
+    text-align: center;
+}
+.footer img{
+    width: 70px;
+    margin-right: 10px;
+}
+
+
+/*Estilos responsive*/
+
+@media(min-width:480px){
+    .contenedor .banner__titulo{
+        font-size: 44px;
+    }
+
+    .main img{
+        max-width: 90%;
+    }
+
+    .info__columna{
+        width: 32%;
+    }
+
+    .info .contenedor{
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .desayunos .contenedor{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .desayunos__columna{
+        width: 50%;
+    }
+
+    .desayunos h3{
+        font-size: 30px;
+    }
+
+    .entradas .contenedor{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around; 
+    }
+
+    .entradas__columna{
+        width: 50%;
+    }
+
+    .entradas h3{
+        font-size: 30px;
+    }
+    
+    .pfuertes .contenedor{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around; 
+    }
+
+    .pfuertes__columna{
+        width: 50%;
+    }
+
+    .pfuertes h3{
+        font-size: 30px;
+    }
+
+    .postres .contenedor{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around; 
+    }
+
+    .postres__columna{
+        width: 50%;
+    }
+
+    .postres h3{
+        font-size: 30px;
+    }
+}
+
+@media(min-width:768px){
+    
+    .desayunos__columna{
+        width: 24%;
+    }
+
+    .desayunos h3{
+        font-size: 25px;
+    }
+
+    .entradas__columna{
+        width: 24%;
+    }
+
+    .entradas h3{
+        font-size: 25px;
+    }
+}
+    .pfuertes__columna{
+        width: 25%;
+    }
+    
+    .pfuertes h3{
+        font-size: 25px;
+    }
+
+    .postres__columna{
+        width: 24%;
+    }
+
+    .postres h3{
+        font-size: 25px;
+    }
+}
+
+@media(min-width:1024px){
+    .nav{
+        position: static;
+        width: auto;
+    }
+
+    .menu{
+        display: flex;
+    }
+
+    .icon-menu{
+        display: none;
+    }
+
+    .menu__link{
+        border: none;
+    }
+
+    .contenedor{
+        width: 1000px;
+    }
+}
+
+@media(min-width:1280px){
+    
+    .contenedor .banner__titulo{
+        font-size: 50px;
+    }
+
+    .contenedor{
+        width: 1300px;
+    }
+
+    .nav{
+        position: static;
+        width: auto;
+    }
+
+    .menu{
+        display: flex;
+        list-style: none;
+    }
+
+    .icon-menu{
+        display: none;
+    }
+
+    .menu a span{
+        position: relative;
+        margin-left: 5px;
+    }
+
+    #btn_submenu{
+        display: block;
+        position: relative;
+    }
+
+    .submenu:hover {
+        position: static;
+        display: block;
+    }
+
+    .info__columna{
+        margin-top: 50px;
+    }
+}

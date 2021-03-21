@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>lettucé</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimun-scale=1.0">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+
+<!--Código de logotipo e icono del menú-->
+<body>
+    <header class="header">
+        <div class="contenedor">
+            <img src="img/logo.png" class="logo">
+            <span class="icon-menu" id="btn_menu"></span>
+            <nav class="nav" id="nav">
+                <ul class="menu">
+                    <li><a href="login.html" class="menu__link">Iniciar Sesión</a></li>
+                    <li><a href="#nosotros" class="menu__link">Nosotros</a></li>
+                    <li id="btn_submenu"><a class="menu__link">Menú <span class="icon-down-open"></span></a>
+                    <ul class="submenu" id="submenu">
+                        <li><a href="#desayunos" >Desayunos</a></li>
+                        <li><a href="#pfuertes" >Platillos Fuertes</a></li>
+                        <li><a href="#entradas" >Entradas</a></li>
+                        <li><a href="#postres" >Postres</a></li>
+                    </ul> 
+                    </li>
+                    <li><a href="#contactanos" class="menu__link">Contactanos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<!--Código para banner-->
+    <div class="banner">
+        <div class="contenedor">
+            <h1 class="banner__titulo">LA MEJOR COCINA <br/> ITALIANA</h1>
+        </div>
+    </div>
+
+    <main class="main">
+        <section class="info">
+            <div class="contenedor">
+                <article class="info__columna">
+                    <img src="img/restaurante.jpg" class="info__img" id="nosotros">
+                    <h2 class="info__titulo" >RESTAURANTE</h2>
+                    <p class="info__txt">Aliquam rhoncus elit viverra enim viverra elementum quis 
+                        in massa. Nunc egestas molestie diam, eget pharetra neque tempus in. Aliquam 
+                        erat volutpat.
+                    </p>
+                </article>
+
+                <article class="info__columna">
+                    <img src="img/platillo.jpg" class="info__img">
+                    <h2 class="info__titulo">COMIDA</h2>
+                    <p class="info__txt">Aliquam rhoncus elit viverra enim viverra elementum quis 
+                        in massa. Nunc egestas molestie diam, eget pharetra neque tempus in. Aliquam 
+                        erat volutpat.
+                    </p>
+                </article>
+
+                <article class="info__columna">
+                    <img src="img/historia.jpg" class="info__img">
+                    <h2 class="info__titulo">HISTORIA</h2>
+                    <p class="info__txt">Aliquam rhoncus elit viverra enim viverra elementum quis 
+                        in massa. Nunc egestas molestie diam, eget pharetra neque tempus in. Aliquam 
+                        erat volutpat.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+<!--Código para los platillos desayunos-->
+
+    <section class="desayunos">
+        <h2 class="desayunos__titulo" id="desayunos">DESAYUNOS</h2>
+        <div class="contenedor">
+      
+            <div class="desayunos__columna">
+                <img src="img/menu/croissant.png" class="desayunos__img">
+                    <h3>CROISSANT</h3>
+            </div>
+    
+            <div class="desayunos__columna">
+                <img src="img/menu/ciambelle.png" class="desayunos__img" width="60%">
+                    <h3>CIAMBELLE</h3>
+            </div>
+        </div>
+    </section>
+    
+
+    
+    <!--Código para los platillos entradas-->
+
+    <section class="entradas">
+        <h2 class="entradas__titulo" id="entradas">ENTRADAS</h2>
+        <div class="contenedor">
+            
+            <div class="entradas__columna">
+                <img src="img/menu/calzone.jpg" class="entradas__img">
+                <h3>CALZONE</h3>
+            </div>
+
+            <div class="entradas__columna">
+                <img src="img/menu/bolasdequeso.png" class="entradas__img">
+                <h3>BOLAS DE QUESO</h3>
+            </div>
+
+            <div class="entradas__columna">
+                <img src="img/menu/canapés.jpg" class="entradas__img">
+                <h3>CANAPÉS</h3>
+            </div>
+
+        </div>
+    </section>
+
+<!--Código para los platillos fuertes-->
+
+<section class="pfuertes">
+    <h2 class="pfuertes__titulo" id="pfuertes">PLATILLOS FUERTES</h2>
+    <div class="contenedor">
+
+        <div class="pfuertes__columna">
+            <img src="img/menu/pastacarbonara.png" class="pfuertes__img">
+            <h3>PASTA A LA CARBONARA</h3>
+        </div>
+
+        <div class="pfuertes__columna">
+            <img src="img/menu/pastaamatriciana.png" class="pfuertes__img">
+            <h3>PASTA A LA AMATRICIANA</h3>
+        </div>
+
+        <div class="pfuertes__columna">
+            <img src="img/menu/risotto.png" class="pfuertes__img">
+            <h3>RISOTTO</h3>
+        </div>
+
+        <div class="pfuertes__columna">
+            <img src="img/menu/ossobuco.png" class="pfuertes__img">
+            <h3>OSSOBUCO</h3>
+        </div>
+    </div>
+</section>
+
+</section>
+
+<!--Código para los postres-->
+
+<section class="postres">
+    <h2 class="postres__titulo" id="postres">POSTRES</h2>
+    <div class="contenedor">
+
+        <div class="postres__columna">
+            <img src="img/menu/tiramisú.png" class="postres__img">
+            <h3>TIRAMISÚ</h3>
+        </div>
+
+        <div class="postres__columna">
+            <img src="img/menu/pannacotta.png" class="postres__img">
+            <h3>PANNACOTTA</h3>
+        </div>
+
+        <div class="postres__columna">
+            <img src="img/menu/cannoli.png" class="postres__img">
+            <h3>CANNOLI</h3>
+        </div>
+    </div>
+</section>
+
+<div class="mapa">
+    <div class="contenedor">
+        <div class="mapa__iframe">
+            <h3 id="contactanos">¿DÓNDE ESTAMOS?</h3>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Magni exercitationem et provident! 
+                Blanditiis aliquam amet aut fugit neque, alias explicabo.</P>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d281.3320025792673!2d127.78380163109242!3d26.35802275126234!2m3!1f132.2
+                560975609756!2f0!3f0!3m2!1i1024!2i768!4f35!3m3!1m2!1s0x0%3A0x0!2zMjbCsDIxJzI4LjQiTiAxMjfCsDQ3JzAxLjciRQ!5e1!3m2!1ses-419!2smx!4v1616281952
+                679!5m2!1ses-419!2smx" width="90%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+</div>
+
+</main>
+
+<footer class="footer">
+    <div class="social">
+        <img src="img/logo1.png">
+        <img src="img/logo2.png">
+        <img src="img/logo3.png">
+    </div>
+    <p class="copy"> &copy; Todos los derechos reservados a Abraham Lechuga | 2021</p>
+</footer>
+<script src="js/menu.js"></script>    
+</body>
+</html>
